@@ -1,0 +1,101 @@
+\documentclass[aps,prb,singlecolumn,superscriptaddress]{revtex4-2} % APS journal style
+\usepackage[a4paper,margin=0.8in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{titlesec} 
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\raggedbottom
+% Bibliography commands
+\bibliographystyle{apalike} % Use APS style for revtex4-2 compatibility
+\titleformat{\section}{\bfseries\large\uppercase}{\thesection.}{1em}{}
+\titleformat{\subsection}{\bfseries}{\thesubsection}{1em}{}
+
+\begin{document}
+
+\title{Quantum Error Correction resilient against Atom Loss}
+\author{Adeniyi Osinowo}
+\affiliation{
+ Department of Physics and Astronomy,
+ University College London,
+ Gower Street,
+ London,
+ WC1E 6BT,
+ UK
+} 
+\date{\today}
+
+\maketitle
+
+\section{Introduction} 
+%Highlight significance of neutral atom QC recently. 
+Neutral-atom quantum processors, based on optically trapped atoms and Rydberg interactions, combine long coherence times with flexible, reconfigurable connectivity and have shown promise for tasks such as optimization and quantum simulation. 
+However, practical implementations suffer from atom loss (qubit loss) arising from finite trap lifetimes and technical noise, which directly reduces the effective code distance of error-correcting encodings and undermines long-duration quantum computation. 
+This project focuses on developing and evaluating quantum error‑correction(QEC) strategies that are specifically resilient to atom loss in neutral‑atom arrays. 
+Building on recent approaches; including teleportation-based loss‑detection and unitary (LDU) replacement schemes~\citep{Perrin_2025}, gauge‑stabilizer constructions for deterministic supercheck outcomes~\citep{Auger_2017}, and belief‑propagation plus ordered‑statistics decoding (BP+OSD) techniques for qLDPC codes~\citep{Roffe_2020} — the goal is to identify combinations of code structure, loss‑aware encoding/repair, and decoding that maximize logical fidelity in the presence of realistic loss channels. 
+The study will use analytical models and numerical simulations to compare candidate protocols, quantify their tolerance to atom loss, and propose practical adaptations for neutral‑atom architectures.
+
+\section{Aims and Objectives}
+This project aims to assess and compare the performance of modifications to existing QEC strategies under qubit loss(QL) errors. Specifically, the project seeks to:
+\begin{itemize} 
+    \item Review existing QEC protocols for mitigating QL errors to identify strategies that can be applied to neutral atom qubits
+    \item Implement relevant QEC protocols for a comparative analysis of their performance under QL errors
+    \item Construct a more robust QEC protocol based on the advantageous features identified in the comparative analysis
+\end{itemize}
+
+\section{Methodology}
+QEC involves protecting logical qubit information from quantum errors by encoding it among multiple physical qubits. 
+QEC protocols generally consist of the following elements:
+% Improve definition of each element and highlight traditional methods and possible improvements
+\begin{itemize}
+    \item Encoding procedure: This involves mapping logical qubits into entangled states of multiple physical qubits to create redundancy that allows error detection and correction. Examples include surface codes, color codes, and low-density parity-check (LDPC) codes~\citep{Roffe_2020}, ~\citep{Auger_2017}
+    \item Decoding procedure(Error Detection \& Correction): This involves measuring syndromes to identify errors and applying corrective operations to restore the logical qubit state. Examples include minimum-weight perfect matching (MWPM), belief propagation (BP), and machine learning-based decoders~\citep{Roffe_2020}, ~\citep{Auger_2017}
+\end{itemize}  
+This study will focus on modifying and assessing these elements of relevant QEC strategies with mathematical models and computational simulations to propose a QEC protocol suitable for neutral atom arrays under atom loss. 
+\subsection{Work plan} 
+The project is divided into three main phases that build upon the previous one to ensure a structured progression toward achieving the project’s goals:
+    \begin{itemize}
+        \item \textbf{Literature Review}(November–January): This phase involves learning the key concepts relevant to this study(i.e. QEC, neutral atom quantum computing, qubit loss errors) and conducting a comprehensive review of existing QEC protocols for mitigating QL errors. The review will focus on three main objectives:
+        \begin{enumerate}
+        \item Identifying QEC constraints specific to neutral atom arrays
+        \item Identifying state-of-the-art QEC protocols for QL-mitigation
+        \item Identifying the key factors for measuring the QL-mitigation performance of the various QEC protocols. 
+        \end{enumerate}
+        \item \textbf{Comparative analysis}(Feb - April): This phase is dedicated to the implementation and comparative analysis of the relevant QEC protocols identified in the Literature review. This will involve:
+        \begin{enumerate}
+        \item Implementing the selected QEC protocols using suitable programming languages and simulation tools
+        \item Simulating the performance of each protocol under various QL error models relevant to neutral atom arrays
+        \item Analyzing the results to identify strengths and weaknesses of each protocol in mitigating QL errors
+        \end{enumerate}
+        \item \textbf{Algorithm Development and Analysis}(May–End of project:): The final phase will focus on investigate the impact of various modifications on the QL-mitigation performance of QEC methods on neutral atom QCs, synthesizing results, and preparing project deliverables. A detailed project report will be written, documenting the methods, experimental findings, and key conclusions. The last weeks will be dedicated to preparing the final presentation, ensuring that the results and insights are communicated effectively. 
+    \end{itemize}
+    
+The preparatory work for this project is underway, including a comprehensive literature review to identify gaps in existing methods and training with the software tools necessary for simulations.
+
+\subsection{Risk assessment}
+    This study employs a computational approach, which minimizes physical risks.
+    However, potential challenges include:
+    \begin{itemize}
+        \item \textbf{Computational Resource Limitations}: The simulations may require significant computational power, which could be a bottleneck. To mitigate this, I will utilize high-performance computing resources available at UCL and optimize code for efficiency.
+        \item \textbf{Algorithm Complexity}: Some QEC algorithms may be complex to implement and understand. I plan to address this by breaking down the algorithms into manageable components and seeking guidance from experts in the field when necessary.
+        \item \textbf{Time Management}: Balancing the project timeline with other academic responsibilities could be challenging. I will create a detailed schedule and set milestones to ensure steady progress throughout the project duration.
+    \end{itemize}
+
+\section{Expected Results} 
+It is expected that this study will yield the following outcomes:
+\begin{itemize}
+    \item Improved understanding of the performance of existing QEC protocols under qubit loss errors in neutral atom arrays
+    \item Identification of key factors that influence the effectiveness of QEC protocols in mitigating qubit loss
+    \item Development of a more robust QEC protocol tailored for neutral atom quantum computers that effectively mitigates qubit loss errors
+    \item Comprehensive comparative analysis of various QEC protocols, providing insights into their strengths and weaknesses in the context of qubit loss
+\end{itemize}
+
+\section*{REFERENCES}
+\bibliography{reference_texts} 
+\end{document}

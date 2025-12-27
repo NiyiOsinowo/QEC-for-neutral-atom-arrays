@@ -1,309 +1,154 @@
-<!--
-Hey, thanks for using the awesome-readme-template template.  
-If you have any enhancements, then fork this project and create a pull request 
-or just open an issue with the label "enhancement".
+# Quantum Error Correction Resilient Against Atom Loss
 
-Don't forget to give this project a star for additional support ;)
-Maybe you can mention me or this repo in the acknowledgements too
--->
-<div align="center">
+A research project investigating quantum error correction (QEC) strategies specifically designed for neutral-atom quantum processors to mitigate atom loss errors.
 
-  <img src="assets/logo.png" alt="logo" width="200" height="auto" />
-  <h1>Awesome Readme Template</h1>
-  
-  <p>
-    An awesome README template for your projects! 
-  </p>
-  
-  
-<!-- Badges -->
-<p>
-  <a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/Louis3797/awesome-readme-template" alt="contributors" />
-  </a>
-  <a href="">
-    <img src="https://img.shields.io/github/last-commit/Louis3797/awesome-readme-template" alt="last update" />
-  </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/network/members">
-    <img src="https://img.shields.io/github/forks/Louis3797/awesome-readme-template" alt="forks" />
-  </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/stargazers">
-    <img src="https://img.shields.io/github/stars/Louis3797/awesome-readme-template" alt="stars" />
-  </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/issues/">
-    <img src="https://img.shields.io/github/issues/Louis3797/awesome-readme-template" alt="open issues" />
-  </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/Louis3797/awesome-readme-template.svg" alt="license" />
-  </a>
-</p>
-   
-<h4>
-    <a href="https://github.com/Louis3797/awesome-readme-template/">View Demo</a>
-  <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template">Documentation</a>
-  <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Report Bug</a>
-  <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Request Feature</a>
-  </h4>
-</div>
+## Table of Contents
 
-<br />
+- [About the Project](#about-the-project)
+- [Research Objectives](#research-objectives)
+- [Methodology](#methodology)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Project Timeline](#project-timeline)
+- [Expected Results](#expected-results)
+- [Author](#author)
+- [License](#license)
+- [References](#references)
 
-<!-- Table of Contents -->
-# :notebook_with_decorative_cover: Table of Contents
+## About the Project
 
-- [About the Project](#star2-about-the-project)
-  * [Screenshots](#camera-screenshots)
-  * [Tech Stack](#space_invader-tech-stack)
-  * [Features](#dart-features)
-  * [Color Reference](#art-color-reference)
-  * [Environment Variables](#key-environment-variables)
-- [Getting Started](#toolbox-getting-started)
-  * [Prerequisites](#bangbang-prerequisites)
-  * [Installation](#gear-installation)
-  * [Running Tests](#test_tube-running-tests)
-  * [Run Locally](#running-run-locally)
-  * [Deployment](#triangular_flag_on_post-deployment)
-- [Usage](#eyes-usage)
-- [Roadmap](#compass-roadmap)
-- [Contributing](#wave-contributing)
-  * [Code of Conduct](#scroll-code-of-conduct)
-- [FAQ](#grey_question-faq)
-- [License](#warning-license)
-- [Contact](#handshake-contact)
-- [Acknowledgements](#gem-acknowledgements)
+Neutral-atom quantum processors, based on optically trapped atoms and Rydberg interactions, combine long coherence times with flexible, reconfigurable connectivity and have shown promise for tasks such as optimization and quantum simulation. However, practical implementations suffer from atom loss (qubit loss) arising from finite trap lifetimes and technical noise, which directly reduces the effective code distance of error-correcting encodings and undermines long-duration quantum computation.
 
-  
+This project focuses on developing and evaluating quantum error-correction strategies that are specifically resilient to atom loss in neutral-atom arrays. Building on recent approaches — including:
 
-<!-- About the Project -->
-## :star2: About the Project
+- **Teleportation-based loss-detection** and unitary (LDU) replacement schemes
+- **Gauge-stabilizer constructions** for deterministic supercheck outcomes
+- **Belief-propagation plus ordered-statistics decoding (BP+OSD)** techniques for qLDPC codes
 
+The goal is to identify combinations of code structure, loss-aware encoding/repair, and decoding that maximize logical fidelity in the presence of realistic loss channels.
 
-<!-- Screenshots -->
-### :camera: Screenshots
+## Research Objectives
 
-<div align="center"> 
-  <img src="https://placehold.co/600x400?text=Your+Screenshot+here" alt="screenshot" />
-</div>
+This project aims to assess and compare the performance of modifications to existing QEC strategies under qubit loss (QL) errors. Specifically, the project seeks to:
 
+1. **Review existing QEC protocols** for mitigating QL errors to identify strategies that can be applied to neutral atom qubits
+2. **Implement relevant QEC protocols** for a comparative analysis of their performance under QL errors
+3. **Construct a more robust QEC protocol** based on the advantageous features identified in the comparative analysis
 
-<!-- TechStack -->
-### :space_invader: Tech Stack
+## Methodology
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-    <li><a href="https://nextjs.org/">Next.js</a></li>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-    <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
-  </ul>
-</details>
+Quantum error correction involves protecting logical qubit information from quantum errors by encoding it among multiple physical qubits. QEC protocols generally consist of the following elements:
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-    <li><a href="https://go.dev/">Golang</a></li>
-    <li><a href="https://nestjs.com/">Nest.js</a></li>
-    <li><a href="https://socket.io/">SocketIO</a></li>
-    <li><a href="https://www.prisma.io/">Prisma</a></li>    
-    <li><a href="https://www.apollographql.com/">Apollo</a></li>
-    <li><a href="https://graphql.org/">GraphQL</a></li>
-  </ul>
-</details>
+### Encoding Procedures
+Mapping logical qubits into entangled states of multiple physical qubits to create redundancy that allows error detection and correction. Examples include:
+- Surface codes
+- Color codes
+- Low-density parity-check (LDPC) codes
 
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.mysql.com/">MySQL</a></li>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-    <li><a href="https://redis.io/">Redis</a></li>
-    <li><a href="https://neo4j.com/">Neo4j</a></li>
-    <li><a href="https://www.mongodb.com/">MongoDB</a></li>
-  </ul>
-</details>
+### Decoding Procedures (Error Detection & Correction)
+Measuring syndromes to identify errors and applying corrective operations to restore the logical qubit state. Examples include:
+- Minimum-weight perfect matching (MWPM)
+- Belief propagation (BP)
+- Machine learning-based decoders
 
-<details>
-<summary>DevOps</summary>
-  <ul>
-    <li><a href="https://www.docker.com/">Docker</a></li>
-    <li><a href="https://www.jenkins.io/">Jenkins</a></li>
-    <li><a href="https://circleci.com/">CircleCLI</a></li>
-  </ul>
-</details>
+This study will focus on modifying and assessing these elements of relevant QEC strategies with mathematical models and computational simulations to propose a QEC protocol suitable for neutral atom arrays under atom loss.
 
-<!-- Features -->
-### :dart: Features
+## Project Structure
 
-- Feature 1
-- Feature 2
-- Feature 3
+```
+QEC-for-neutral-atom-arrays/
+├── Decoders/              # Error decoding implementations
+├── Encoders/              # Error encoding implementations
+│   └── Test.ipynb         # Testing notebook for encoders
+├── Project Docs/          # Project documentation
+│   ├── Dissertation/      # Final dissertation documents
+│   ├── Literature Review/ # Literature review documents
+│   ├── Progress Report/   # Progress report documents
+│   └── Project Plan/      # Initial project plan
+├── LICENSE
+├── README.md
+└── VERSIONING.md
+```
 
-<!-- Color Reference -->
-### :art: Color Reference
+## Getting Started
 
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Primary Color | ![#222831](https://via.placeholder.com/10/222831?text=+) #222831 |
-| Secondary Color | ![#393E46](https://via.placeholder.com/10/393E46?text=+) #393E46 |
-| Accent Color | ![#00ADB5](https://via.placeholder.com/10/00ADB5?text=+) #00ADB5 |
-| Text Color | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) #EEEEEE |
+### Prerequisites
 
+This project uses computational simulations and requires:
+- Python (version TBD based on implementation)
+- Jupyter Notebook for running test implementations
+- High-performance computing resources (available at UCL)
+- Quantum simulation libraries (to be specified during implementation)
 
-<!-- Env Variables -->
-### :key: Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file
-
-`API_KEY`
-
-`ANOTHER_API_KEY`
-
-<!-- Getting Started -->
-## 	:toolbox: Getting Started
-
-<!-- Prerequisites -->
-### :bangbang: Prerequisites
-
-This project uses Yarn as package manager
+### Installation
 
 ```bash
- npm install --global yarn
+# Clone the repository
+git clone https://github.com/yourusername/QEC-for-neutral-atom-arrays.git
+
+# Navigate to the project directory
+cd QEC-for-neutral-atom-arrays
+
+# Install dependencies (to be updated)
+# pip install -r requirements.txt
 ```
 
-<!-- Installation -->
-### :gear: Installation
+## Project Timeline
 
-Install my-project with npm
+The project is divided into three main phases:
 
-```bash
-  yarn install my-project
-  cd my-project
-```
-   
-<!-- Running Tests -->
-### :test_tube: Running Tests
+### Phase 1: Literature Review (November 2025 - January 2026)
+Learning key concepts relevant to QEC, neutral atom quantum computing, and qubit loss errors. Conducting a comprehensive review focusing on:
+- QEC constraints specific to neutral atom arrays
+- State-of-the-art QEC protocols for QL-mitigation
+- Key factors for measuring QL-mitigation performance
 
-To run tests, run the following command
+### Phase 2: Comparative Analysis (February - April 2026)
+Implementation and comparative analysis of relevant QEC protocols:
+- Implementing selected QEC protocols using suitable programming languages and simulation tools
+- Simulating performance under various QL error models relevant to neutral atom arrays
+- Analyzing results to identify strengths and weaknesses of each protocol
 
-```bash
-  yarn test test
-```
+### Phase 3: Algorithm Development and Analysis (May - End of Project)
+Investigating modifications to improve QL-mitigation performance:
+- Developing enhanced QEC methods
+- Synthesizing results
+- Preparing final project deliverables and presentation
 
-<!-- Run Locally -->
-### :running: Run Locally
+## Expected Results
 
-Clone the project
+This study is expected to yield the following outcomes:
 
-```bash
-  git clone https://github.com/Louis3797/awesome-readme-template.git
-```
+- Improved understanding of the performance of existing QEC protocols under qubit loss errors in neutral atom arrays
+- Identification of key factors that influence the effectiveness of QEC protocols in mitigating qubit loss
+- Development of a more robust QEC protocol tailored for neutral atom quantum computers that effectively mitigates qubit loss errors
+- Comprehensive comparative analysis of various QEC protocols, providing insights into their strengths and weaknesses in the context of qubit loss
 
-Go to the project directory
+## Risk Assessment
 
-```bash
-  cd my-project
-```
+This study employs a computational approach, minimizing physical risks. Potential challenges include:
 
-Install dependencies
+- **Computational Resource Limitations**: Mitigated by utilizing high-performance computing resources at UCL and optimizing code for efficiency
+- **Algorithm Complexity**: Addressed by breaking down algorithms into manageable components and seeking expert guidance
+- **Time Management**: Managed through detailed scheduling and milestone tracking
 
-```bash
-  yarn install
-```
+## Author
 
-Start the server
+**Adeniyi Osinowo**  
+Department of Physics and Astronomy  
+University College London  
+Gower Street, London, WC1E 6BT, UK
 
-```bash
-  yarn start
-```
+## License
 
+See [LICENSE](LICENSE) file for details.
 
-<!-- Deployment -->
-### :triangular_flag_on_post: Deployment
+## References
 
-To deploy this project run
+Key references for this project include:
+- Perrin et al. (2025) - Teleportation-based loss-detection and unitary replacement schemes
+- Auger et al. (2017) - Gauge-stabilizer constructions
+- Roffe (2020) - Belief-propagation plus ordered-statistics decoding techniques for qLDPC codes
 
-```bash
-  yarn deploy
-```
-
-
-<!-- Usage -->
-## :eyes: Usage
-
-Use this space to tell a little more about your project and how it can be used. Show additional screenshots, code samples, demos or link to other resources.
-
-
-```javascript
-import Component from 'my-project'
-
-function App() {
-  return <Component />
-}
-```
-
-<!-- Roadmap -->
-## :compass: Roadmap
-
-* [x] Todo 1
-* [ ] Todo 2
-
-
-<!-- Contributing -->
-## :wave: Contributing
-
-<a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" />
-</a>
-
-
-Contributions are always welcome!
-
-See `contributing.md` for ways to get started.
-
-
-<!-- Code of Conduct -->
-### :scroll: Code of Conduct
-
-Please read the [Code of Conduct](https://github.com/Louis3797/awesome-readme-template/blob/master/CODE_OF_CONDUCT.md)
-
-<!-- FAQ -->
-## :grey_question: FAQ
-
-- Question 1
-
-  + Answer 1
-
-- Question 2
-
-  + Answer 2
-
-
-<!-- License -->
-## :warning: License
-
-Distributed under the no License. See LICENSE.txt for more information.
-
-
-<!-- Contact -->
-## :handshake: Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/Louis3797/awesome-readme-template](https://github.com/Louis3797/awesome-readme-template)
-
-
-<!-- Acknowledgments -->
-## :gem: Acknowledgements
-
-Use this section to mention useful resources and libraries that you have used in your projects.
-
- - [Shields.io](https://shields.io/)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#travel--places)
- - [Readme Template](https://github.com/othneildrew/Best-README-Template)
+For a complete list of references, see the project documentation in [Project Docs](Project%20Docs/).
 
