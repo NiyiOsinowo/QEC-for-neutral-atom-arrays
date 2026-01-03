@@ -1,0 +1,18 @@
+\begin{thebibliography}{}
+
+\bibitem[Auger et~al., 2017]{Auger_2017}
+Auger, J.~M., Anwar, H., Gimeno-Segovia, M., Stace, T.~M., and Browne, D.~E. (2017).
+\newblock Fault-tolerance thresholds for the surface code with fabrication errors.
+\newblock {\em Physical Review A}, 96(4).
+
+\bibitem[Perrin et~al., 2025]{Perrin_2025}
+Perrin, H., Jandura, S., and Pupillo, G. (2025).
+\newblock Quantum error correction resilient against atom loss.
+\newblock {\em Quantum}, 9:1884.
+
+\bibitem[Roffe et~al., 2020]{Roffe_2020}
+Roffe, J., White, D.~R., Burton, S., and Campbell, E. (2020).
+\newblock Decoding across the quantum low-density parity-check code landscape.
+\newblock {\em Physical Review Research}, 2(4).
+
+\end{thebibliography}
