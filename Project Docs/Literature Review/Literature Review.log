@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.14)  3 JAN 2026 13:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.14)  16 FEB 2026 10:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -579,7 +579,123 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-(./Literature Review.bbl) [1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Literature Review.aux)
+/Users/niyi/Documents/GitHub/QEC-for-neutral-atom-arrays/Project Docs/Literature Review/Literature Review.tex:49: You can't use `macro parameter character #' in vertical mode.
+l.49 #
+      # 1. Key causes and mechanisms of atom loss
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/niyi/Documents/GitHub/QEC-for-neutral-atom-arrays/Project Docs/Literature Review/Literature Review.tex:49: You can't use `macro parameter character #' in vertical mode.
+l.49 ##
+        1. Key causes and mechanisms of atom loss
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/niyi/Documents/GitHub/QEC-for-neutral-atom-arrays/Project Docs/Literature Review/Literature Review.tex:65: You can't use `macro parameter character #' in vertical mode.
+l.65 #
+      # 2. Why atom loss is especially challenging for QEC
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/niyi/Documents/GitHub/QEC-for-neutral-atom-arrays/Project Docs/Literature Review/Literature Review.tex:65: You can't use `macro parameter character #' in vertical mode.
+l.65 ##
+        2. Why atom loss is especially challenging for QEC
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/niyi/Documents/GitHub/QEC-for-neutral-atom-arrays/Project Docs/Literature Review/Literature Review.tex:80: You can't use `macro parameter character #' in vertical mode.
+l.80 #
+      # 3. Mitigation strategies impacting QEC performance
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/niyi/Documents/GitHub/QEC-for-neutral-atom-arrays/Project Docs/Literature Review/Literature Review.tex:80: You can't use `macro parameter character #' in vertical mode.
+l.80 ##
+        3. Mitigation strategies impacting QEC performance
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 1077) in paragraph at lines 88--90
+\OT1/cmr/m/n/10 ex-plic-itly ac-count-ing for per-move loss prob-a-bil-i-
+ []
+
+/Users/niyi/Documents/GitHub/QEC-for-neutral-atom-arrays/Project Docs/Literature Review/Literature Review.tex:95: You can't use `macro parameter character #' in vertical mode.
+l.95 #
+      # 4. Impact on QEC performance
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/niyi/Documents/GitHub/QEC-for-neutral-atom-arrays/Project Docs/Literature Review/Literature Review.tex:95: You can't use `macro parameter character #' in vertical mode.
+l.95 ##
+        4. Impact on QEC performance
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/niyi/Documents/GitHub/QEC-for-neutral-atom-arrays/Project Docs/Literature Review/Literature Review.tex:106: You can't use `macro parameter character #' in vertical mode.
+l.106 #
+       # 5. Relationship to scaling and hardware
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/niyi/Documents/GitHub/QEC-for-neutral-atom-arrays/Project Docs/Literature Review/Literature Review.tex:106: You can't use `macro parameter character #' in vertical mode.
+l.106 ##
+         5. Relationship to scaling and hardware
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Package natbib Warning: Citation `Perrin_2025' on page 2 undefined on input line 129.
+
+
+Package natbib Warning: Citation `Perrin_2025' on page 2 undefined on input line 138.
+
+
+Package natbib Warning: Citation `Perrin_2025' on page 2 undefined on input line 153.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+ []\OT1/cmr/m/n/10 Teleportation-based Loss De-tec-tion Units
+ []
+
+
+Package natbib Warning: Citation `Roffe_2020' on page 2 undefined on input line 154.
+
+
+Package natbib Warning: Citation `Chamberland_2022' on page 2 undefined on input line 155.
+
+
+Package natbib Warning: Citation `Chamberland_2022' on page 2 undefined on input line 156.
+
+[2{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+
+Package natbib Warning: Citation `Perrin_2025' on page 3 undefined on input line 168.
+
+(./Literature Review.bbl)
+
+Package natbib Warning: There were undefined citations.
+
+[3] (./Literature Review.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -595,21 +711,21 @@ Package rerunfilecheck Warning: File `"Literature Review".out' has changed.
 
 Package rerunfilecheck Info: Checksums for `"Literature Review".out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D6134B29979CE966E8B00F76F31ECC60;646.
+(rerunfilecheck)             After:  CBED14EDD1992AF254BAAAF61FBBCD5C;2358.
  ) 
 Here is how much of TeX's memory you used:
- 18174 strings out of 473190
- 342190 string characters out of 5715800
- 718797 words of memory out of 5000000
- 41250 multiletter control sequences out of 15000+600000
- 564896 words of font info for 60 fonts, out of 8000000 for 9000
+ 18196 strings out of 473190
+ 342513 string characters out of 5715800
+ 741797 words of memory out of 5000000
+ 41261 multiletter control sequences out of 15000+600000
+ 565231 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,79p,351b,1099s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on "Literature Review.pdf" (1 page, 71688 bytes).
+ 75i,6n,79p,668b,1148s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on "Literature Review.pdf" (3 pages, 117109 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
+ 75 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

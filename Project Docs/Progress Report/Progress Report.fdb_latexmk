@@ -1,13 +1,14 @@
 # Fdb version 4
-["bibtex Progress Report"] 1767453153.24296 "Progress Report.aux" "Progress Report.bbl" "Progress Report" 1767453754.2408 2
-  "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "Progress Report.aux" 1767453754.13662 885 b82186beb5e7e8a2c6ed4d687f694623 "pdflatex"
+["bibtex Progress Report"] 1771260240.55583 "Progress Report.aux" "Progress Report.bbl" "Progress Report" 1771262105.6225 0
+  "./reference_texts.bib" 1771257981.20457 3907 649866142baf165c6799ff75232afc07 ""
+  "/usr/local/texlive/2025/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
+  "Progress Report.aux" 1771262105.43779 2182 b761790814a7cbc930d86cf9553285c9 "pdflatex"
   (generated)
   "Progress Report.bbl"
   "Progress Report.blg"
   (rewritten before read)
-["pdflatex"] 1767453753.73629 "/Users/niyi/Documents/GitHub/QEC-for-neutral-atom-arrays/Project Docs/Progress Report/Progress Report.tex" "Progress Report.pdf" "Progress Report" 1767453754.24093 2
-  "/Users/niyi/Documents/GitHub/QEC-for-neutral-atom-arrays/Project Docs/Progress Report/Progress Report.tex" 1767453753.53124 4539 0025f471c0b807c2d5ed4654c70798df ""
+["pdflatex"] 1771262104.97329 "/Users/niyi/Documents/GitHub/QEC-for-neutral-atom-arrays/Project Docs/Progress Report/Progress Report.tex" "Progress Report.pdf" "Progress Report" 1771262105.62262 0
+  "/Users/niyi/Documents/GitHub/QEC-for-neutral-atom-arrays/Project Docs/Progress Report/Progress Report.tex" 1771262104.77848 11865 8706ecc09ec2ed7d94c93bb275110b24 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -21,6 +22,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1246382020 940 228d6584342e91276bf566bcf9716b83 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm" 1136768653 1328 5442e22a7072966dbaf88ca900acf3f0 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm" 1136768653 1524 d89e2d087a9828407a196f428428ef4a ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
@@ -29,7 +31,11 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm" 1136768653 1116 25a7bf822c58caf309a702ef79f4afbb ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmti9.tfm" 1136768653 1476 cccc6cc4935c18ec3d5623b77ecb8b74 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb" 1248133631 32298 c6d25bb16d1eac01ebdc6d7084126a1e ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
@@ -110,10 +116,10 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1741970028 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741970020 3345735 24195eb836db796e1bfcb079b37c0b5f ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "Progress Report.aux" 1767453754.13662 885 b82186beb5e7e8a2c6ed4d687f694623 "pdflatex"
-  "Progress Report.bbl" 1767453153.31663 0 d41d8cd98f00b204e9800998ecf8427e "bibtex Progress Report"
-  "Progress Report.out" 1767453754.13705 808 6e35f615bba955e16f3badf3c629c308 "pdflatex"
-  "Progress Report.tex" 1767453753.53124 4539 0025f471c0b807c2d5ed4654c70798df ""
+  "Progress Report.aux" 1771262105.43779 2182 b761790814a7cbc930d86cf9553285c9 "pdflatex"
+  "Progress Report.bbl" 1771260240.63317 6361 d28785113df43a76ae121df117f6344d "bibtex Progress Report"
+  "Progress Report.out" 1771262105.43817 1462 29eea0a7e602d48e98280f368a052b98 "pdflatex"
+  "Progress Report.tex" 1771262104.77848 11865 8706ecc09ec2ed7d94c93bb275110b24 ""
   (generated)
   "Progress Report.aux"
   "Progress Report.log"
