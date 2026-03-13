@@ -1,0 +1,1241 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global/global}
+  \entry{PhysRevLett.121.240501}{article}{}{}
+    \name{author}{9}{}{%
+      {{hash=SC}{%
+         family={Sheng},
+         familyi={S\bibinitperiod},
+         given={Cheng},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=HX}{%
+         family={He},
+         familyi={H\bibinitperiod},
+         given={Xiaodong},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=XP}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Peng},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Guo},
+         familyi={G\bibinitperiod},
+         given={Ruijun},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=WK}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Kunpeng},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=XZ}{%
+         family={Xiong},
+         familyi={X\bibinitperiod},
+         given={Zongyuan},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Min},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Jin},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZM}{%
+         family={Zhan},
+         familyi={Z\bibinitperiod},
+         given={Mingsheng},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{SC+1}
+    \strng{fullhash}{SCHXXPGRWKXZLMWJZM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.121.240501
+    \endverb
+    \field{issue}{24}
+    \field{pages}{240501}
+    \field{title}{High-Fidelity Single-Qubit Gates on Neutral Atoms in a Two-Dimensional Magic-Intensity Optical Dipole Trap Array}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.121.240501
+    \endverb
+    \field{volume}{121}
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Cesa_2017}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=CA}{%
+         family={Cesa},
+         familyi={C\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Martin},
+         familyi={M\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society (APS)}%
+    }
+    \strng{namehash}{CAMJ1}
+    \strng{fullhash}{CAMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/physreva.95.052330
+    \endverb
+    \field{issn}{2469-9934}
+    \field{number}{5}
+    \field{title}{Two-qubit entangling gates between distant atomic qubits in a lattice}
+    \verb{url}
+    \verb http://dx.doi.org/10.1103/PhysRevA.95.052330
+    \endverb
+    \field{volume}{95}
+    \field{journaltitle}{Physical Review A}
+    \field{month}{05}
+    \field{year}{2017}
+  \endentry
+
+  \entry{bluvstein2024logical}{article}{}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{10}{}{%
+      {{hash=BD}{%
+         family={Bluvstein},
+         familyi={B\bibinitperiod},
+         given={Dolev},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=ESJ}{%
+         family={Evered},
+         familyi={E\bibinitperiod},
+         given={Simon\bibnamedelima J},
+         giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=GAA}{%
+         family={Geim},
+         familyi={G\bibinitperiod},
+         given={Alexandra\bibnamedelima A},
+         giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=LSH}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Sophie\bibnamedelima H},
+         giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=ZH}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Hengyun},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Manovitz},
+         familyi={M\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=ES}{%
+         family={Ebadi},
+         familyi={E\bibinitperiod},
+         given={Sepehr},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Cain},
+         familyi={C\bibinitperiod},
+         given={Madelyn},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Kalinowski},
+         familyi={K\bibinitperiod},
+         given={Marcin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Hangleiter},
+         familyi={H\bibinitperiod},
+         given={Dominik},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group UK London}%
+    }
+    \strng{namehash}{BD+1}
+    \strng{fullhash}{BDESJGAALSHZHMTESCMKMHD+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{7997}
+    \field{pages}{58\bibrangedash 65}
+    \field{title}{Logical quantum processor based on reconfigurable atom arrays}
+    \field{volume}{626}
+    \field{journaltitle}{Nature}
+    \field{year}{2024}
+  \endentry
+
+  \entry{Fowler2012SurfaceCodes}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=FAG}{%
+         family={Fowler},
+         familyi={F\bibinitperiod},
+         given={Austin\bibnamedelima G.},
+         giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mariantoni},
+         familyi={M\bibinitperiod},
+         given={Matteo},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MJM}{%
+         family={Martinis},
+         familyi={M\bibinitperiod},
+         given={John\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=CAN}{%
+         family={Cleland},
+         familyi={C\bibinitperiod},
+         given={Andrew\bibnamedelima N.},
+         giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FAG+1}
+    \strng{fullhash}{FAGMMMJMCAN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevA.86.032324
+    \endverb
+    \field{number}{3}
+    \field{pages}{032324}
+    \field{title}{Surface codes: Towards practical large-scale quantum computation}
+    \field{volume}{86}
+    \field{journaltitle}{Physical Review A}
+    \field{year}{2012}
+  \endentry
+
+  \entry{Riverlane2025QEC}{report}{}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={Riverlane},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{The Quantum Error Correction Report 2025}
+    \verb{url}
+    \verb https://www.riverlane.com/quantum-error-correction-report-2025
+    \endverb
+    \list{institution}{1}{%
+      {Riverlane Ltd.}%
+    }
+    \field{type}{techreport}
+    \field{year}{2025}
+  \endentry
+
+  \entry{gu2024optimizing}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=GS}{%
+         family={Gu},
+         familyi={G\bibinitperiod},
+         given={Shouzhen},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=VY}{%
+         family={Vaknin},
+         familyi={V\bibinitperiod},
+         given={Yotam},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Retzker},
+         familyi={R\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kubica},
+         familyi={K\bibinitperiod},
+         given={Aleksander},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{GS+1}
+    \strng{fullhash}{GSVYRAKA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{040354}
+    \field{title}{Optimizing quantum error-correction protocols with erasure qubits}
+    \field{volume}{6}
+    \field{journaltitle}{PRX Quantum}
+    \field{year}{2025}
+  \endentry
+
+  \entry{chang2024surface}{article}{}{}
+    \name{author}{6}{}{%
+      {{hash=CK}{%
+         family={Chang},
+         familyi={C\bibinitperiod},
+         given={Kathleen},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Singh},
+         familyi={S\bibinitperiod},
+         given={Shraddha},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Claes},
+         familyi={C\bibinitperiod},
+         given={Jahan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Sahay},
+         familyi={S\bibinitperiod},
+         given={Kaavya},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=TJ}{%
+         family={Teoh},
+         familyi={T\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Puri},
+         familyi={P\bibinitperiod},
+         given={Shruti},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{CK+1}
+    \strng{fullhash}{CKSSCJSKTJPS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{040355}
+    \field{title}{Surface code with imperfect erasure checks}
+    \field{volume}{6}
+    \field{journaltitle}{PRX Quantum}
+    \field{year}{2025}
+  \endentry
+
+  \entry{gu2023fault}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=GS}{%
+         family={Gu},
+         familyi={G\bibinitperiod},
+         given={Shouzhen},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Retzker},
+         familyi={R\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kubica},
+         familyi={K\bibinitperiod},
+         given={Aleksander},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{GSRAKA1}
+    \strng{fullhash}{GSRAKA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{013249}
+    \field{title}{Fault-tolerant quantum architectures based on erasure qubits}
+    \field{volume}{7}
+    \field{journaltitle}{Physical Review Research}
+    \field{year}{2025}
+  \endentry
+
+  \entry{wu2022erasure}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=WY}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Yue},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kolkowitz},
+         familyi={K\bibinitperiod},
+         given={Shimon},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Puri},
+         familyi={P\bibinitperiod},
+         given={Shruti},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=TJD}{%
+         family={Thompson},
+         familyi={T\bibinitperiod},
+         given={Jeff\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group UK London}%
+    }
+    \strng{namehash}{WY+1}
+    \strng{fullhash}{WYKSPSTJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{4657}
+    \field{title}{Erasure conversion for fault-tolerant quantum computing in alkaline earth Rydberg atom arrays}
+    \field{volume}{13}
+    \field{journaltitle}{Nature communications}
+    \field{year}{2022}
+  \endentry
+
+  \entry{kubica2023erasure}{article}{}{}
+    \name{author}{6}{}{%
+      {{hash=KA}{%
+         family={Kubica},
+         familyi={K\bibinitperiod},
+         given={Aleksander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Haim},
+         familyi={H\bibinitperiod},
+         given={Arbel},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=VY}{%
+         family={Vaknin},
+         familyi={V\bibinitperiod},
+         given={Yotam},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Levine},
+         familyi={L\bibinitperiod},
+         given={Harry},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=BF}{%
+         family={Brand{\~a}o},
+         familyi={B\bibinitperiod},
+         given={Fernando},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Retzker},
+         familyi={R\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{KA+2}
+    \strng{fullhash}{KAHAVYLHBFRA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{041022}
+    \field{title}{Erasure qubits: Overcoming the T 1 limit in superconducting circuits}
+    \field{volume}{13}
+    \field{journaltitle}{Physical Review X}
+    \field{year}{2023}
+  \endentry
+
+  \entry{teoh2023dual}{article}{}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{10}{}{%
+      {{hash=TJD}{%
+         family={Teoh},
+         familyi={T\bibinitperiod},
+         given={James\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=WP}{%
+         family={Winkel},
+         familyi={W\bibinitperiod},
+         given={Patrick},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=BHK}{%
+         family={Babla},
+         familyi={B\bibinitperiod},
+         given={Harshvardhan\bibnamedelima K},
+         giveni={H\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=CBJ}{%
+         family={Chapman},
+         familyi={C\bibinitperiod},
+         given={Benjamin\bibnamedelima J},
+         giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Claes},
+         familyi={C\bibinitperiod},
+         given={Jahan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=dGSJ}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Graaf},
+         familyi={G\bibinitperiod},
+         given={Stijn\bibnamedelima J},
+         giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=GJW}{%
+         family={Garmon},
+         familyi={G\bibinitperiod},
+         given={John\bibnamedelima WO},
+         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=KWD}{%
+         family={Kalfus},
+         familyi={K\bibinitperiod},
+         given={William\bibnamedelima D},
+         giveni={W\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Yao},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Maiti},
+         familyi={M\bibinitperiod},
+         given={Aniket},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {National Acad Sciences}%
+    }
+    \strng{namehash}{TJD+1}
+    \strng{fullhash}{TJDWPBHKCBJCJGSJdGJWKWDLYMA+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{41}
+    \field{pages}{e2221736120}
+    \field{title}{Dual-rail encoding with superconducting cavities}
+    \field{volume}{120}
+    \field{journaltitle}{Proceedings of the National Academy of Sciences}
+    \field{year}{2023}
+  \endentry
+
+  \entry{scholl2023erasure}{article}{}{}
+    \name{author}{6}{}{%
+      {{hash=SP}{%
+         family={Scholl},
+         familyi={S\bibinitperiod},
+         given={Pascal},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SAL}{%
+         family={Shaw},
+         familyi={S\bibinitperiod},
+         given={Adam\bibnamedelima L},
+         giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=TRBS}{%
+         family={Tsai},
+         familyi={T\bibinitperiod},
+         given={Richard Bing-Shiun},
+         giveni={R\bibinitperiod\bibinitdelim B\bibinithyphendelim S\bibinitperiod},
+      }}%
+      {{hash=FR}{%
+         family={Finkelstein},
+         familyi={F\bibinitperiod},
+         given={Ran},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Choi},
+         familyi={C\bibinitperiod},
+         given={Joonhee},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=EM}{%
+         family={Endres},
+         familyi={E\bibinitperiod},
+         given={Manuel},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group UK London}%
+    }
+    \strng{namehash}{SP+1}
+    \strng{fullhash}{SPSALTRBSFRCJEM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{7982}
+    \field{pages}{273\bibrangedash 278}
+    \field{title}{Erasure conversion in a high-fidelity Rydberg quantum simulator}
+    \field{volume}{622}
+    \field{journaltitle}{Nature}
+    \field{year}{2023}
+  \endentry
+
+  \entry{kang2023quantum}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=KM}{%
+         family={Kang},
+         familyi={K\bibinitperiod},
+         given={Mingyu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CWC}{%
+         family={Campbell},
+         familyi={C\bibinitperiod},
+         given={Wesley\bibnamedelima C},
+         giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=BKR}{%
+         family={Brown},
+         familyi={B\bibinitperiod},
+         given={Kenneth\bibnamedelima R},
+         giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{KMCWCBKR1}
+    \strng{fullhash}{KMCWCBKR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{020358}
+    \field{title}{Quantum error correction with metastable states of trapped ions using erasure conversion}
+    \field{volume}{4}
+    \field{journaltitle}{{PRX} Quantum}
+    \field{year}{2023}
+  \endentry
+
+  \entry{koottandavida2024erasure}{article}{}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{10}{}{%
+      {{hash=KA}{%
+         family={Koottandavida},
+         familyi={K\bibinitperiod},
+         given={Akshay},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TI}{%
+         family={Tsioutsios},
+         familyi={T\bibinitperiod},
+         given={Ioannis},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kargioti},
+         familyi={K\bibinitperiod},
+         given={Aikaterini},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SCR}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Cassady\bibnamedelima R},
+         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=JVR}{%
+         family={Joshi},
+         familyi={J\bibinitperiod},
+         given={Vidul\bibnamedelima R},
+         giveni={V\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=DW}{%
+         family={Dai},
+         familyi={D\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=TJD}{%
+         family={Teoh},
+         familyi={T\bibinitperiod},
+         given={James\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=CJC}{%
+         family={Curtis},
+         familyi={C\bibinitperiod},
+         given={Jacob\bibnamedelima C},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=FL}{%
+         family={Frunzio},
+         familyi={F\bibinitperiod},
+         given={Luigi},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SRJ}{%
+         family={Schoelkopf},
+         familyi={S\bibinitperiod},
+         given={Robert\bibnamedelima J},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{KA+1}
+    \strng{fullhash}{KATIKASCRJVRDWTJDCJCFLSRJ+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{18}
+    \field{pages}{180601}
+    \field{title}{Erasure detection of a dual-rail qubit encoded in a double-post superconducting cavity}
+    \field{volume}{132}
+    \field{journaltitle}{{P}hysical {R}eview {L}etters}
+    \field{year}{2024}
+  \endentry
+
+  \entry{levine2024demonstrating}{article}{}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{10}{}{%
+      {{hash=LH}{%
+         family={Levine},
+         familyi={L\bibinitperiod},
+         given={Harry},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Haim},
+         familyi={H\bibinitperiod},
+         given={Arbel},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HJS}{%
+         family={Hung},
+         familyi={H\bibinitperiod},
+         given={Jimmy\bibnamedelima SC},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=AN}{%
+         family={Alidoust},
+         familyi={A\bibinitperiod},
+         given={Nasser},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Kalaee},
+         familyi={K\bibinitperiod},
+         given={Mahmoud},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DL}{%
+         family={DeLorenzo},
+         familyi={D\bibinitperiod},
+         given={Laura},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=WEA}{%
+         family={Wollack},
+         familyi={W\bibinitperiod},
+         given={E\bibnamedelima Alex},
+         giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=AAP}{%
+         family={Arrangoiz-Arriola},
+         familyi={A\bibinithyphendelim A\bibinitperiod},
+         given={Patricio},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Khalajhedayati},
+         familyi={K\bibinitperiod},
+         given={Amirhossein},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Sanil},
+         familyi={S\bibinitperiod},
+         given={Rohan},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{LH+1}
+    \strng{fullhash}{LHHAHJSANKMDLWEAAAPKASR+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{011051}
+    \field{title}{Demonstrating a long-coherence dual-rail erasure qubit using tunable transmons}
+    \field{volume}{14}
+    \field{journaltitle}{Physical Review X}
+    \field{year}{2024}
+  \endentry
+
+  \entry{hann2024hybrid}{article}{}{}
+    \name{author}{9}{}{%
+      {{hash=HCT}{%
+         family={Hann},
+         familyi={H\bibinitperiod},
+         given={Connor\bibnamedelima T},
+         giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=NK}{%
+         family={Noh},
+         familyi={N\bibinitperiod},
+         given={Kyungjoo},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=PH}{%
+         family={Putterman},
+         familyi={P\bibinitperiod},
+         given={Harald},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=MMH}{%
+         family={Matheny},
+         familyi={M\bibinitperiod},
+         given={Matthew\bibnamedelima H},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=IJK}{%
+         family={Iverson},
+         familyi={I\bibinitperiod},
+         given={Joseph\bibnamedelima K},
+         giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=FMT}{%
+         family={Fang},
+         familyi={F\bibinitperiod},
+         given={Michael\bibnamedelima T},
+         giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Chamberland},
+         familyi={C\bibinitperiod},
+         given={Christopher},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=PO}{%
+         family={Painter},
+         familyi={P\bibinitperiod},
+         given={Oskar},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=BFG}{%
+         family={Brand{\~a}o},
+         familyi={B\bibinitperiod},
+         given={Fernando\bibnamedelima GSL},
+         giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{HCT+1}
+    \strng{fullhash}{HCTNKPHMMHIJKFMTCCPOBFG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{030305}
+    \field{title}{Hybrid cat-transmon architecture for scalable, hardware-efficient quantum error correction}
+    \field{volume}{6}
+    \field{journaltitle}{{PRX} Quantum}
+    \field{year}{2025}
+  \endentry
+
+  \entry{guillaud2021error}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=GJ}{%
+         family={Guillaud},
+         familyi={G\bibinitperiod},
+         given={J{\'e}r{\'e}mie},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mirrahimi},
+         familyi={M\bibinitperiod},
+         given={Mazyar},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{GJMM1}
+    \strng{fullhash}{GJMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{042413}
+    \field{title}{Error rates and resource overheads of repetition cat qubits}
+    \field{volume}{103}
+    \field{journaltitle}{Physical Review A}
+    \field{year}{2021}
+  \endentry
+
+  \entry{guillaud2019repetition}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=GJ}{%
+         family={Guillaud},
+         familyi={G\bibinitperiod},
+         given={J{\'e}r{\'e}mie},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mirrahimi},
+         familyi={M\bibinitperiod},
+         given={Mazyar},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{GJMM1}
+    \strng{fullhash}{GJMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{041053}
+    \field{title}{Repetition cat qubits for fault-tolerant quantum computation}
+    \field{volume}{9}
+    \field{journaltitle}{Physical Review X}
+    \field{year}{2019}
+  \endentry
+
+  \entry{xu2023autonomous}{article}{}{}
+    \name{author}{6}{}{%
+      {{hash=XQ}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Qian},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=ZG}{%
+         family={Zheng},
+         familyi={Z\bibinitperiod},
+         given={Guo},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=WYX}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Yu-Xin},
+         giveni={Y\bibinithyphendelim X\bibinitperiod},
+      }}%
+      {{hash=ZP}{%
+         family={Zoller},
+         familyi={Z\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=CAA}{%
+         family={Clerk},
+         familyi={C\bibinitperiod},
+         given={Aashish\bibnamedelima A},
+         giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=JL}{%
+         family={Jiang},
+         familyi={J\bibinitperiod},
+         given={Liang},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group UK London}%
+    }
+    \strng{namehash}{XQ+1}
+    \strng{fullhash}{XQZGWYXZPCAAJL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{78}
+    \field{title}{Autonomous quantum error correction and fault-tolerant quantum computation with squeezed cat qubits}
+    \field{volume}{9}
+    \field{journaltitle}{npj Quantum Information}
+    \field{year}{2023}
+  \endentry
+
+  \entry{aharonov1997fault}{inproceedings}{}{}
+    \name{author}{2}{}{%
+      {{hash=AD}{%
+         family={Aharonov},
+         familyi={A\bibinitperiod},
+         given={Dorit},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BOM}{%
+         family={Ben-Or},
+         familyi={B\bibinithyphendelim O\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ADBOM1}
+    \strng{fullhash}{ADBOM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the twenty-ninth annual ACM symposium on Theory of computing}
+    \field{pages}{176\bibrangedash 188}
+    \field{title}{Fault-tolerant quantum computation with constant error}
+    \field{year}{1997}
+  \endentry
+
+  \entry{knill1998resilient}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=KE}{%
+         family={Knill},
+         familyi={K\bibinitperiod},
+         given={Emanuel},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=LR}{%
+         family={Laflamme},
+         familyi={L\bibinitperiod},
+         given={Raymond},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=ZWH}{%
+         family={Zurek},
+         familyi={Z\bibinitperiod},
+         given={Wojciech\bibnamedelima H},
+         giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Association for the Advancement of Science}%
+    }
+    \strng{namehash}{KELRZWH1}
+    \strng{fullhash}{KELRZWH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5349}
+    \field{pages}{342\bibrangedash 345}
+    \field{title}{Resilient quantum computation}
+    \field{volume}{279}
+    \field{journaltitle}{Science}
+    \field{year}{1998}
+  \endentry
+
+  \entry{kitaev2003fault}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=KAY}{%
+         family={Kitaev},
+         familyi={K\bibinitperiod},
+         given={A\bibnamedelima Yu},
+         giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{KAY1}
+    \strng{fullhash}{KAY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{2\bibrangedash 30}
+    \field{title}{Fault-tolerant quantum computation by anyons}
+    \field{volume}{303}
+    \field{journaltitle}{Annals of physics}
+    \field{year}{2003}
+  \endentry
+
+  \entry{google2024quantum}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=AGQ}{%
+         family={AI},
+         familyi={A\bibinitperiod},
+         given={Google\bibnamedelima Quantum},
+         giveni={G\bibinitperiod\bibinitdelim Q\bibinitperiod},
+      }}%
+      {{hash=C}{%
+         family={Collaborators},
+         familyi={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AGQC1}
+    \strng{fullhash}{AGQC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1038/s41586-024-08449-y
+    \endverb
+    \field{note}{Published: December 9, 2024}
+    \field{title}{Quantum error correction below the surface code threshold}
+    \field{journaltitle}{Nature}
+    \field{year}{2024}
+  \endentry
+
+  \entry{NielsenChuang}{book}{}{}
+    \name{author}{2}{}{%
+      {{hash=NMA}{%
+         family={Nielsen},
+         familyi={N\bibinitperiod},
+         given={Michael\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=CIL}{%
+         family={Chuang},
+         familyi={C\bibinitperiod},
+         given={Isaac\bibnamedelima L.},
+         giveni={I\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{NMACIL1}
+    \strng{fullhash}{NMACIL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{10th Anniversary Edition}
+    \field{title}{Quantum Computation and Quantum Information}
+    \list{location}{1}{%
+      {Cambridge, UK}%
+    }
+    \field{year}{2010}
+  \endentry
+
+  \entry{Gottesman1997}{thesis}{}{}
+    \name{author}{1}{}{%
+      {{hash=GD}{%
+         family={Gottesman},
+         familyi={G\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GD1}
+    \strng{fullhash}{GD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Stabilizer Codes and Quantum Error Correction}
+    \list{institution}{1}{%
+      {California Institute of Technology}%
+    }
+    \field{type}{phdthesis}
+    \field{year}{1997}
+  \endentry
+
+  \entry{PreskillNotes}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=PJ}{%
+         family={Preskill},
+         familyi={P\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PJ1}
+    \strng{fullhash}{PJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Available at \url{https://www.preskill.caltech.edu/ph229/notes/chap7.pdf}}
+    \field{title}{Lecture Notes on Quantum Computation: Chapter 7 -- Quantum Error Correction}
+    \field{year}{1999}
+  \endentry
+
+  \entry{perrin2024quantum}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=PH}{%
+         family={Perrin},
+         familyi={P\bibinitperiod},
+         given={Hugo},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=JS}{%
+         family={Jandura},
+         familyi={J\bibinitperiod},
+         given={Sven},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Pupillo},
+         familyi={P\bibinitperiod},
+         given={Guido},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PHJSPG1}
+    \strng{fullhash}{PHJSPG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.22331/q-2025-07-10-1884
+    \endverb
+    \field{pages}{1884}
+    \field{title}{Quantum Error Correction resilient against Atom Loss}
+    \field{volume}{9}
+    \field{journaltitle}{{Quantum}}
+    \field{year}{2025}
+  \endentry
+\enddatalist
+\endinput

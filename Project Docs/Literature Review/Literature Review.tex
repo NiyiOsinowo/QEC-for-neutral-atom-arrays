@@ -1,4 +1,4 @@
-\documentclass[aps,prb,twocolumn,superscriptaddress]{revtex4-2} % APS journal style
+\documentclass[aps,prb,twocolumn,superscriptaddress,nobibnotes]{revtex4-2} % APS journal style
 \usepackage[a4paper,margin=0.8in]{geometry}
 \usepackage{graphicx}
 \usepackage{amsmath, amssymb}
@@ -13,13 +13,12 @@
 \usepackage{enumitem}
 \raggedbottom
 % Bibliography commands
-\bibliographystyle{apalike} % Use APS style for revtex4-2 compatibility
+\bibliographystyle{apsrev4-2}
 \titleformat{\section}{\bfseries\large\uppercase}{\thesection.}{1em}{}
 \titleformat{\subsection}{\bfseries}{\thesubsection}{1em}{}
-
 \begin{document}
 
-\title{Quantum Error Correction resilient against Atom Loss}
+\title{QEC strategies against Atom Loss in Neutral Atom Arrays}
 \author{Adeniyi Osinowo}
 \affiliation{
  Department of Physics and Astronomy,
@@ -30,98 +29,55 @@
  UK
 } 
 \date{\today}
-
-\maketitle
 \begin{abstract}
-    h
+% Write abstract based on progress report content
+% Quantum error correction (QEC) is a critical component in the development of reliable quantum computing systems.
+% Neutral atom arrays have emerged as a promising platform for quantum computing due to their scalability and long coherence times.
+% However, atom loss remains a significant challenge that can compromise the effectiveness of QEC strategies.
+% This progress report outlines the current state of research on QEC strategies designed to mitigate atom loss in neutral atom arrays.
+% Key factors influencing atom loss, relevant error models, and potential QEC strategies are discussed.
+% Preliminary results indicate that certain QEC codes show promise in addressing atom loss, but further investigation is needed to optimize their performance.
+% Future work will focus on refining error models and implementing QEC strategies to enhance resilience against atom loss.
 \end{abstract}
+\maketitle
 
-\section{Introduction}
-% - Explain motivation/significance of the topic: Highlight key advantages of Neutral atom arrays over other qubit architectures
-In recent years, neutral atom arrays have emerged as a promising platform for quantum computing due to their scalability, long coherence times, and the ability to manipulate individual atoms with high precision. These advantages position neutral atom arrays as strong contenders against other qubit architectures such as superconducting qubits and trapped ions. However, one of the significant challenges faced by neutral atom arrays is atom loss, which can severely impact the performance of quantum error correction (QEC) strategies.
-% - Define problem statement: Introduce neutral atom architecure to explain the issue of atom loss and how QEC strategies can help mitigate the issue 
-Since the experimental realization of neutral atom arrays in the early 2000s, they were [missimg something].
-Through rapid progress in recent years, neutral atom arrays have achieved significant milestones, including the demonstration of high-fidelity single-qubit gates, two-qubit entangling gates, and the creation of large-scale arrays with hundreds of atoms. 
-These advancements have made neutral atom arrays a leading candidate for scalable quantum computing. 
-However, the issue of atom loss remains a critical obstacle to achieving fault-tolerant quantum computation with this platform. Atom loss can occur due to various factors such as collisions with background gas, spontaneous emission, and imperfections in trapping potentials. This loss can lead to qubit erasure errors, which are distinct from standard Pauli errors and require specialized QEC strategies to mitigate their impact on logical qubit fidelity and fault-tolerance thresholds.
----
+\section{Introduction}% Introduce core concepts and motivation for the review
+% - Paragraph: Explain motivation/significance of the topic: 
+Since their experimental realization in the early 2000s, neutral atom arrays were initially viewed as scalable but slow and low-fidelity platforms, suitable mainly for quantum simulation rather than quantum computing.
+Through rapid progress in recent years, they have achieved significant milestones, including the demonstration of high-fidelity single-qubit gates, two-qubit entangling gates, and the creation of large-scale arrays with hundreds of atoms.
+These advancements have made them a leading candidate for scalable quantum computing, offering several advantages over other qubit architectures, including scalability, long coherence times, and the ability to implement high-fidelity parallel entangling gates.
+However, atom loss remains a significant challenge that can compromise the effectiveness of QEC strategies on this platform.
 
-## 1. Key causes and mechanisms of atom loss
+% - Paragraph: Define problem statement: Explain how neutral atom arrays work and how atom loss arises, effects of QEC
+Neutral atom arrays consist of individual rydberg atoms trapped in optical tweezers or optical lattices, which serve as qubits for quantum computations.
+Each atom is manipulated using laser pulses to perform quantum gates, and the state of the qubits can be read out using fluorescence imaging.
+During these operations, atoms can be lost due to various factors, including collisions with background gas particles, spontaneous emission, and technical imperfections in trapping mechanisms ~\cite{Bluvstein2024}.
+This leads to qubit erasure errors, which differ from standard bit-flip or phase-flip errors in that the location of the error is known, but the state of the qubit is lost.
+This type of error can significantly degrade the performance of QEC codes, as it can lead to a loss of logical qubits and reduce the overall fidelity of quantum computations.
+% Sentence: Explain why QEC strategies are essential for mitigating the effects of atom loss and ensuring reliable quantum computations in neutral atom arrays 
+Effective QEC strategies are essential for maintaining the integrity of quantum information and ensuring reliable quantum computations in the presence of atom loss.
 
-**a. Stochastic loading and trap occupation**
-Neutral atom arrays are usually prepared by randomly loading atoms into optical tweezers or lattices. Not all traps become occupied and atoms can also drop out during rearrangement. These stochastic and loss processes create *defects* in the array before computation even starts, reducing available qubits and requiring *rearrangement algorithms* that must tolerate physical atom loss. ([arXiv][2])
+% - Paragraph: Unique challenges of Atom loss for QEC
+Standard QEC codes assume a fixed set of physical qubits and errors that flip or phase-flip their states. 
+Atom loss removes a qubit entirely, which is fundamentally different from a Pauli error and cannot be corrected by normal syndrome measurements unless the loss is *detected and treated as an erasure*. \cite{PMC}
+In common surface codes and related stabilizer QEC codes, each stabilizer involves a set of data qubits. 
+If a data qubit is lost, the measurement pattern changes: stabilizers can anticommute with each other, causing flickering syndrome patterns that propagate correlated errors if not properly handled. \cite{Nature}
+Once loss events occur, the decoder must incorporate “erasure” information (the locations where qubits have been lost) since this can substantially improve logical error rates if used. 
+Decoders that do not use this information perform much worse, while adaptive decoders that incorporate loss can reduce logical failure probability by orders of magnitude. \cite{EmergentMind}
+Loss effectively reduces the number of available qubits and can truncate logical code distances. 
+If too many qubits are lost before detection, logical qubits may be left underprotected and susceptible to logical errors that QEC cannot correct.
 
-**b. Trap instability and residual heating**
-Atoms can leave traps due to photon recoil, imperfect cooling, collisions with residual gas, or heating during transport operations. For example, excitation to Rydberg states can produce anti-trapping forces that eject atoms from their tweezers. ([Baha Jabarin M.Sc., M.A.][3])
-
-**c. Readout and imaging processes**
-State measurement typically involves optical imaging, and the interaction with imaging light can inadvertently kick atoms out of their traps, adding loss during readout. ([Baha Jabarin M.Sc., M.A.][3])
-
-**d. Transport and rearrangement loss**
-Moving atoms to form defect-free arrays or to reconfigure circuits introduces further loss risk because atoms must be accelerated and decelerated within trap arrays, and even slight imperfections or acceleration limits can heat or drop atoms. Algorithms like ATLAS explicitly model this: each move has a *per-move loss probability* that directly reduces the final defect-free fill rate. ([arXiv][2])
-
----
-
-## 2. Why atom loss is especially challenging for QEC
-
-**a. Loss breaks fixed register assumptions**
-Standard QEC codes assume a fixed set of physical qubits and errors that flip or phase-flip their states. Atom *loss* removes a qubit entirely, which is fundamentally different from a Pauli error and cannot be corrected by normal syndrome measurements unless the loss is *detected and treated as an erasure*. ([PMC][1])
-
-**b. Undetected loss corrupts stabilizers**
-In common surface codes and related stabilizer QEC codes, each stabilizer involves a set of data qubits. If a data qubit is lost, the measurement pattern changes: stabilizers can anticommute with each other, causing *“flickering” syndrome patterns* that propagate correlated errors if not properly handled. ([Nature][4])
-
-**c. More complex decoding**
-Once loss events occur, the decoder must incorporate “erasure” information (the *locations* where qubits have been lost) since this can substantially *improve logical error rates* if used. Decoders that do not use this information perform much worse, while adaptive decoders that incorporate loss can reduce logical failure probability by orders of magnitude. ([Emergent Mind][5])
-
-**d. Atom loss reduces code distance**
-Loss effectively reduces the number of available qubits and can truncate logical code distances. If too many qubits are lost before detection, logical qubits may be left underprotected and susceptible to logical errors that QEC cannot correct.
-
-
-## 3. Mitigation strategies impacting QEC performance
-
-**a. Erasure conversion and detection**
-Protocols including *leakage-to-erasure conversion* use auxiliary circuits (leakage detection units) to nondestructively sense whether an atom is present. Once a loss is *detected*, the error becomes an *erasure* (known missing qubit), which both reduces decoding complexity and improves thresholds because erasure information can be exploited by decoders. ([APS Journals][6])
-
-**b. Real-time atom replacement**
-Continuous reservoir pumping and fast atom replacement approaches can supply new atoms from a reservoir into the computational register without disturbing remaining qubits, enabling deeper circuits with unlimited effective depth. ([arXiv][7])
-
-**c. Rearrangement algorithms**
-Improved algorithms like ATLAS plan atom movements while explicitly accounting for per-move loss probabilities to maximize final array fill and reduce initial wasted qubits. Better array layouts directly support QEC by ensuring high occupancy before computation. ([arXiv][2])
-
-**d. Adaptive decoders and “superchecks”**
-QEC schemes that modify stabilizer patterns or use combinations of stabilizers (“superchecks”) can maintain valid error-detecting circuits even in the presence of known lost qubits. Decoders that take erasure information as input achieve *lower logical error probabilities* and can even have non-zero thresholds as a function of loss probability. ([Emergent Mind][5])
-
-
-## 4. Impact on QEC performance
-
-**a. Increased logical error rates**
-Atom loss, if unhandled, turns into correlated syndrome noise or causes faulty stabilizer patterns, raising the logical error rate and degrading the fault-tolerance threshold. Without loss detection and erasure handling, standard QEC approaches may fail even below nominal physical error thresholds. ([Nature][4])
-
-**b. Lower fault-tolerance thresholds**
-The presence of loss imposes additional constraints on the QEC threshold surface. For example, studies show a linear threshold line where allowable depolarizing noise depends on loss probability; high loss can quickly reduce where logical error suppression is feasible. ([Emergent Mind][5])
-
-**c. Overhead increases**
-Managing loss increases overhead through additional ancilla qubits for detection, more complex decoding, and required supply of replacement atoms. These overheads reduce effective code distances and increase circuit complexity per logical operation.
-
-## 5. Relationship to scaling and hardware
-
-Large neutral atom arrays with thousands of atoms aim to reach fault-tolerant scales. As array size increases, even low atom-loss rates translate to many missing qubits. Handling loss efficiently through detection, replacement, and advanced rearrangement is essential for *scalable fault-tolerant quantum computation*. ([PubMed][8])
-
-**Core takeaway**
-Atom loss in neutral atom arrays differs from standard qubit errors because it physically removes information carriers rather than corrupting their state. This loss disrupts standard QEC assumptions, requires specialized detection and mitigation to maintain effective QEC performance, and significantly influences logical error rates, thresholds, and hardware overheads.
-
-% - Explain key research questions and how they will be explored and applied in this literature review: conduct exploratory analysis of QEC strategies that can mitigate atom loss in neutral atom arrays
-%   - Identify key factors/challenges of atom loss in neutral atom arrays on QEC performance
-%   - Identify relevant error models for atom loss in neutral atom arrays
-%   - Identify relevant QEC strategies that can mitigate atom loss in neutral atom arrays
-%   - Identify key factors to consider when assessing QEC strategies for atom loss in neutral atom arrays
-
-\section{Methodology}
-% Paragraph: Explain scope and approach for reviewing literature and the sources that have been identified so far. 
+% Paragraph: Explain scope, and approach for reviewing literature and structure of the review
 This review focuses on recent research articles, review papers, and experimental studies on QEC strategies addressing qubit losses and erasure errors across various platforms, with the goal of identifying strategies adaptable to neutral atom arrays.
 The following sections address the research questions outlined in the introduction.
 
-\subsection{Challenges of atom loss in neutral atom arrays on QEC performance}
+%   - Identify relevant QEC strategies that can mitigate atom loss in neutral atom arrays
+%   - Identify key factors to consider when assessing QEC strategies for atom loss in neutral atom arrays
+
+\section{QEC Background}% Provide background on quantum error correction and its importance for quantum computing
+% Paragraph
+
+\section{Modelling atom loss in neutral atom arrays}
 % Paragraph: Discuss key factors/challenges of atom loss in neutral atom arrays on QEC performance
 % Sentence: Explain how atom loss occurs in neutral atom arrays and the mechanisms behind it (e.g., collisions, spontaneous emission, technical imperfections)
 % Sentence: Explain why erasure errors from atom loss are different from standard Pauli errors and how they can impact the performance of QEC codes
@@ -130,19 +86,26 @@ Generally, neutral atom arrays are susceptible to two main sources of errors: de
 Traditional QEC codes are primarily designed to correct Pauli errors, and they may not be effective in addressing erasure errors caused by atom loss.
 Because the absence of a qubit is easier to detect than standard Pauli errors, erasure errors are easier to correct, but they can still significantly degrade the performance of QEC codes if not properly addressed.
 The presence of erasure errors can lead to a significant reduction in the effective code distance, which in turn reduces the error threshold and increases the logical error rate of the QEC code.
+Moving atoms to form defect-free arrays or to reconfigure circuits introduces further loss risk because atoms must be accelerated and decelerated within trap arrays, and even slight imperfections or acceleration limits can heat or drop atoms. Algorithms like ATLAS explicitly model this: each move has a *per-move loss probability* that directly reduces the final defect-free fill rate. ([arXiv][2])
+State measurement typically involves optical imaging, and the interaction with imaging light can inadvertently kick atoms out of their traps, adding loss during readout. ([Baha Jabarin M.Sc., M.A.][3])
 
-\subsection{Modelling atom loss in neutral atom arrays}
+% - Paragraph: Impact on QEC performance
+% - Increased logical error rates: Atom loss, if unhandled, turns into correlated syndrome noise or causes faulty stabilizer patterns, raising the logical error rate and degrading the fault-tolerance threshold. 
+% Without loss detection and erasure handling, standard QEC approaches may fail even below nominal physical error thresholds. ([Nature][4])
+% - Lower fault-tolerance thresholds: The presence of loss imposes additional constraints on the QEC threshold surface. For example, studies show a linear threshold line where allowable depolarizing noise depends on loss probability; high loss can quickly reduce where logical error suppression is feasible. ([Emergent Mind][5])
+% - Overhead increases: Managing loss increases overhead through additional ancilla qubits for detection, more complex decoding, and required supply of replacement atoms. These overheads reduce effective code distances and increase circuit complexity per logical operation.
+%   - Identify key factors/challenges of atom loss in neutral atom arrays on QEC performance
+%   - Identify relevant error models for atom loss in neutral atom arrays
 % Paragraph: Discuss relevant error models for atom loss in neutral atom arrays
 Studies on atom loss in neutral atom arrays typically employ a combination of atom loss model which accounts for losses during gate operations due to Rydberg excitation and depolarizing noise model, which char-
-acterizes imperfections arising from pulse applica-
-tions and environmental interactions~\cite{Perrin_2025}.
+acterizes imperfections arising from pulse applications and environmental interactions~\cite{Perrin_2025}.
 %  - Erasure error models
 %  - Stochastic loss models
 %  - Loss models based on physical mechanisms of atom loss (e.g., collision-induced loss, spontaneous emission-induced loss)
 %  - Hybrid models combining multiple loss mechanisms
 %  - Consideration of temporal and spatial correlations in atom loss
 
-\subsection{Atom loss mitigating QEC strategies}
+\section{Atom loss mitigating QEC strategies}
 % Paragraph: Discuss relevant QEC strategies that can mitigate atom loss in neutral atom arrays
 %   - Loss Detection Units(LDU) & Teleportation-based LDU
 %   - Decoder: Quantum Low-Density Parity-Check (QLDPC) codes with Belief Propagation and OSD Decoders
@@ -156,21 +119,13 @@ Previous research has proposed several QEC strategies to mitigate atom loss in n
     \item Dual-rail Encoding: This method encodes quantum information across two physical qubits, allowing for the detection and correction of atom loss by comparing the states of the two qubits~\cite{Chamberland_2022}.
 \end{itemize}
 
-\subsection{Assessment methodology} 
-% Paragraph: Explain how the identified QEC strategies will be assessed for their effectiveness in mitigating atom loss in neutral atom arrays
-This study will assess the effectiveness of the identified QEC strategies through a combination of theoretical analysis and numerical simulations.
-Theoretical analysis will involve evaluating the error thresholds and logical error rates associated with each QEC strategy under various atom loss scenarios.
-Numerical simulations will be conducted to model the performance of each QEC strategy in realistic conditions, taking into account factors such as gate fidelities, coherence times, and the specific error models for atom loss in neutral atom arrays.
-The results from both theoretical analysis and numerical simulations will be compared to determine the most effective QEC strategies for mitigating atom loss in neutral atom arrays.
-
-\section{Results \& Discussion} % presentation of any preliminary results
-% Paragraph: Describe what is being done so far in terms of implementation and testing of identified QEC strategies for atom loss in neutral atom arrays
-So far preliminary work is underway to reproduce the results of the model implemented in~\cite{Perrin_2025} which assesses the performance of a teleportation-based loss detection unit (LDU) in mitigating atom loss in neutral atom arrays.
-\subsection{Implementation of error model}
-% Paragraph: Progress on implementation of error model
-
-\subsection{Implementation of QEC strategies}
-% Paragraph: Progress on implementation of relevant QEC strategies for assessment
+% - Paragraph: Mitigation strategies impacting QEC performance
+% - Protocols including *leakage-to-erasure conversion* use auxiliary circuits (leakage detection units) to nondestructively sense whether an atom is present. 
+% Once a loss is *detected*, the error becomes an *erasure* (known missing qubit), which both reduces decoding complexity and improves thresholds because erasure information can be exploited by decoders. ([APS Journals][6])
+% - Improved algorithms like ATLAS plan atom movements while explicitly accounting for per-move loss probabilities to maximize final array fill and reduce initial wasted qubits. 
+% Better array layouts directly support QEC by ensuring high occupancy before computation. ([arXiv][2])
+% - QEC schemes that modify stabilizer patterns or use combinations of stabilizers (“superchecks”) can maintain valid error-detecting circuits even in the presence of known lost qubits. 
+% Decoders that take erasure information as input achieve *lower logical error probabilities* and can even have non-zero thresholds as a function of loss probability. ([Emergent Mind][5])
 
 \section{Conclusion}
 % 	- Summary of progress 
@@ -179,11 +134,18 @@ Significant progress has been made in identifying key challenges associated with
 Initial implementations of error models and QEC strategies are underway, with promising preliminary results.
 Future work will focus on reproducing and extending existing models, as well as exploring additional QEC strategies to enhance the resilience of neutral atom arrays against atom loss.
 % 	- Outline and explain difficulties/limitations encountered so far and questions that remain unanswered
-% 	- Briefly describe a revised Timeline or changes to plan
+
+\subsection{Assessment methodology}
+% Paragraph: Explain how the identified QEC strategies will be assessed for their effectiveness in mitigating atom loss in neutral atom arrays
+This study will assess the effectiveness of the identified QEC strategies through a combination of theoretical analysis and numerical simulations.
+Theoretical analysis will involve evaluating the error thresholds and logical error rates associated with each QEC strategy under various atom loss scenarios.
+Numerical simulations will be conducted to model the performance of each QEC strategy in realistic conditions, taking into account factors such as gate fidelities, coherence times, and the specific error models for atom loss in neutral atom arrays.
+The results from both theoretical analysis and numerical simulations will be compared to determine the most effective QEC strategies for mitigating atom loss in neutral atom arrays.
 
 \section*{REFERENCES}
 \makeatletter
 \let\pre@bibdata\@empty
 \makeatother
 \bibliography{reference_texts} 
+
 \end{document}
